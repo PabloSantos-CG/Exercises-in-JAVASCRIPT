@@ -1,32 +1,33 @@
-// function SomaRaizQ (n1, n2){
-//     const Block = (x) => x * x;
-    
-//       let nBlock1 = Block(n1);
-//       let nBlock2 = Block(n2);
-//       let tot = nBlock1 + nBlock2;
-    
-//       console.log('A soma da raiz quadrada de ', n1, '+', n2, 'é', tot);
-//     }
-    
-//     SomaRaizQ(2,3);
-    
-    // let exemple ['position1', 2, 'position3', [5,6,7] ];
 
-    let consessionaria = {
-      chefiaGeral: 'Sun Tzu',
-      valuetion: 12000000.6,
-      localizacao: 'Belo Horizonte',
-      unidade: [ 
-        {id: 0, nomeUnidade: 'NovoTempo', gestor: 'Paulo', localizacao: 'Salvador', estoqueGeral: 90},
-    
-        {id: 1, nomeUnidade: 'VelhoTempo', gestor: 'Ana', localizacao: 'Lauro de Freitas', estoqueGeral: 30},
-    
-        {id: 2, nomeUnidade: 'HondaOrigi', gestor: 'Cleiton', localizacao: 'Camaçari', estoqueGeral: 235}
-      ]
-    }
-    
-    console.log('A chefia Geral desta empresa se chama: ' + consessionaria.chefiaGeral);
-    
-    console.log('nosso valuetion representa atualmente R$' + consessionaria.valuetion);
-    
-    console.log('Nossa unidade com maior estoque é',  consessionaria.unidade[2].nomeUnidade, 'e seu estoque equivale à: ', consessionaria.unidade[2].estoqueGeral, 'UNIDADES');
+//1º EXERCÍCIO
+/* let primeiroNome = window.prompt("Insira seu primeiro nome: ");
+let sobrenome = window.prompt("Insira seu sobrenome: ");
+let campoEstudo = window.prompt("Insira seu campo de estudo: ");
+let anoNascimento = window.prompt("Insira seu ano de nascimento: ");
+let anoAtual = 2023;
+let idade = anoAtual - anoNascimento;
+alert('Seja Bem-Vindo! ' + primeiroNome + ' ' + sobrenome +
+  '\nSeu campo de estudo é: ' + campoEstudo +
+  '\nSua idade é: ' + anoNascimento
+); */
+
+
+//2º EXERCÍCIO
+/* let priEntrada = window.prompt('Insira o primeiro valor');
+let segEntrada = window.prompt('Insira o segundo valor');
+
+let priValor = parseFloat(priEntrada);
+let segValor = parseFloat(segEntrada);
+
+let resultSoma = priValor + segValor;
+let resultSubtracao = priValor - segValor;
+let resultMultiplicacao = priValor * segValor;
+let resultDivisao = priValor / segValor;
+
+
+alert('Para soma o resultado é: ' + resultSoma +
+  '\nPara subtração o resultado é: ' + resultSubtracao +
+  '\nPara multiplicação o resultado é: ' + resultMultiplicacao +
+  '\nPara divisão o resultado é: ' + resultDivisao
+); */
+
