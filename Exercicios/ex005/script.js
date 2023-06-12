@@ -11,19 +11,19 @@ personagem vai ter:
     possui escudo? s/n
 */
 
-let character = window.prompt("Insira o nome do seu personagem:");
-let attackPower = parseFloat(window.prompt("Insira o seu poder de ataque:"));
+const character = window.prompt("Insira o nome do seu personagem:");
+const attackPower = parseFloat(window.prompt("Insira o seu poder de ataque:"));
 
-let opponent = window.prompt("Insira o nome do seu oponente:");
+const opponent = window.prompt("Insira o nome do seu oponente:");
 let healthPoints = parseFloat(window.prompt(
   "Quantidade de pontos de vida do oponente:"
 ));
-let defensePower = parseFloat(window.prompt(
+const defensePower = parseFloat(window.prompt(
   "Insira o poder de defesa do oponente:"
 ));
-let shield = window.confirm("Oponente possui Escudo?");
+const shield = prompt("Oponente possui Escudo? \nDIGITE APENAS (s/n)");
 
-let damage = Number;
+let damage = 0;
 
 alert('Personagem: ' + character + 
   '\nPoder de Ataque: ' + attackPower + 
@@ -33,14 +33,13 @@ alert('Personagem: ' + character +
   '\nEscudo: ' + shield
 );
 
-if (attackPower > defensePower && shield == false) {
+if (attackPower > defensePower && shield === 'n') {
   damage = attackPower - defensePower;
-} else if (attackPower > defensePower && shield == true) {
+} else if (attackPower > defensePower && shield === 's') {
   damage = (attackPower - defensePower) / 2;
-} else {
-  damage = 0;
 }
 
+alert('Dano causado = ' + damage)
 healthPoints -= damage;
 
 alert('---- INFORMAÇÕES ATUALIZADAS ----' +
