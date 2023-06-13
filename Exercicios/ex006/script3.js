@@ -1,13 +1,18 @@
-const name = prompt("Digite seu nome: ");
-response = prompt("Já visitou alguma cidade? (SIM/NAO)");
-qtd = 0;
+const nomeTurista = prompt('Olá, turista! Qual o seu nome?');
+cidades = ' ';
+contagem = 0 ;
 
-while (response === "SIM") {
-  cidade = prompt("Qual cidade visitou?");
-  responsive = prompt("Já visitou outra cidade? (SIM/NAO)");
-  if (responsive === "NAO") {
-    break;
-  }
-  qtd++;
+let pergunta = prompt('Já visitou alguma cidade? (Sim/Não');
+
+while (pergunta === 'Sim'){
+  cidade = prompt('Qual nome da cidade?');
+  cidades +=' - ' + cidade + '\n';
+  contagem++;
+  pergunta = prompt('Já visitou outra cidade? (Sim/Não)');
 }
-alert('A quantidade de cidades visitada é: ' + qtd);
+
+alert(
+  'Turista: ' + nomeTurista +
+  '\nQuantidade de cidades visitadas: ' + contagem +
+  '\nCidades visitadas: ' + '\n' + cidades
+)
