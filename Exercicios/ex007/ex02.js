@@ -1,30 +1,29 @@
-let option = '';
-let balance = parseFloat(prompt(
-  'Seja Bem-Vindo!' +
-  '\nInsira seu saldo:'
-));
+let option = "";
+let balance = parseFloat(prompt("Seja Bem-Vindo!" + "\nInsira seu saldo:"));
 
-do{
-  option = parseFloat(prompt(
-    'Saldo Disponível: R$ ' + balance +
-    '\nOpções:' +
-    '\n1. Adicionar Dinheiro' +
-    '\n2. Remover Dinheiro' +
-    '\n3. Sair'
-  ));
+do {
+  option = parseFloat(
+    prompt(
+      "Saldo Disponível: R$ " +
+        balance +
+        "\nOpções:" +
+        "\n1. Adicionar Dinheiro" +
+        "\n2. Remover Dinheiro" +
+        "\n3. Sair"
+    )
+  );
 
-  switch (option){
+  switch (option) {
     case 1:
-      balance += parseFloat(prompt('Adicionar: R$ '));
-    break
+      balance += parseFloat(prompt("Adicionar: R$ "));
+      break;
     case 2:
-      balance -= parseFloat(prompt('Remover: R$ '));
-    break
+      balance -= parseFloat(prompt("Remover: R$ "));
+      break;
     case 3:
-      alert('Encerrando...');
-    break
+      alert("Encerrando...");
+      break;
     default:
-      alert('Opção inválida!');
+      alert("Opção inválida!");
   }
-
-} while(option !== 3)
+} while (option !== 3);
