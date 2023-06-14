@@ -1,3 +1,4 @@
+let result = '';
 let term = parseFloat(prompt('Digite o número para saber sua tabuada: '));
 let operator = prompt(
   'Digite o número da opção desejada' +
@@ -10,26 +11,26 @@ let operator = prompt(
 switch (operator){
   case '1':
     for (let indice = 1; indice <= 10; indice++){
-      alert(term + ' - ' + indice + ' = ' + (indice - term));
+      result += term + ' + ' + indice + ' = ' + ( indice + term ) + '\n';
     }
     break
   case '2':
     for (let indice = 1; indice <= 10; indice++){
-      alert(term + ' - ' + indice + ' = ' + (indice - term));
+      result += term + ' - ' + indice + ' = ' + ( indice - term ) + '\n';
     }
     break
   case '3':
     for (let indice = 1; indice <= 10; indice++){
-      alert(term + ' * ' + indice + ' = ' + (indice * term));
+      result += term + ' * ' + indice + ' = ' + ( indice * term ) + '\n';
     }
     break
   case '4':
     for (let indice = 1; indice <= 10; indice++){
-      alert(term + ' / ' + indice + ' = ' + (indice / term));
+      result += term + ' / ' + indice + ' = ' + ( indice / term ) + '\n';
     }
     break
   default:
     alert('Opção inválida!');
 }
 
-  
+alert('Tabuada: \n' + result);
