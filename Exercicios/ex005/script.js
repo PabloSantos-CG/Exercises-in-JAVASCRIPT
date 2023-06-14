@@ -1,17 +1,4 @@
-/*
-personagem vai ter:
-  1º personagem -> character
-    nome:
-    poder de ataque:
-
-  2º oponente -> opponent
-    nome:
-    pontos de vida:
-    poder de defesa:
-    possui escudo? s/n
-*/
-
-const character = window.prompt("Insira o nome do seu personagem:");
+const character = prompt("Insira o nome do seu personagem:");
 const attackPower = parseFloat(window.prompt("Insira o seu poder de ataque:"));
 
 const opponent = window.prompt("Insira o nome do seu oponente:");
