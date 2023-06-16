@@ -15,7 +15,14 @@ do {
       novoRegistro.banheiros = parseFloat(prompt('Quantidade de banheiros: '))
       novoRegistro.garagem = prompt('Possui garagem? (Sim/Não)')
 
-      let confirmacao = confirm('Deseja salvar?')
+      let confirmacao = confirm(
+        '--Imóvel--' +
+        '\nProprietário : ' + novoRegistro.proprietario +
+        '\nQuartos : ' + novoRegistro.quartos +
+        '\nBanheiros : ' + novoRegistro.banheiros +
+        '\nGaragem : ' + novoRegistro.garagem +
+        '\nDeseja salvar?'
+        )
       
       if (confirmacao){
         registros.push(novoRegistro)
