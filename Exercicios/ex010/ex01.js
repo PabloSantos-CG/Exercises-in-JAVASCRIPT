@@ -3,15 +3,15 @@ let opcao = ''
 
 do {
   opcao = prompt(
-    'Cadastrados: ' + registros.length +
-    '\n\nEscolha uma opção: \n1. Adicionar imóvel \n2. Exibir Cadastradas \n3. Sair'
+    'Imóveis cadastrados: ' + registros.length +
+    '\n\nEscolha uma opção: \n1. Adicionar um novo imóvel \n2. Exibir imóveis Cadastrados \n3. Sair'
   )
 
   switch(opcao){
     case '1':
       let novoRegistro = {}
       novoRegistro.proprietario = prompt('Proprietário: ')
-      novoRegistro.quartos = parseFloat(prompt('Quantidade de quatos: '))
+      novoRegistro.quartos = parseFloat(prompt('Quantidade de quartos: '))
       novoRegistro.banheiros = parseFloat(prompt('Quantidade de banheiros: '))
       novoRegistro.garagem = prompt('Possui garagem? (Sim/Não)')
 
@@ -41,6 +41,5 @@ do {
       break
     default:
       alert('Opção inválida')
-    
   }
 } while(opcao !== '3')
