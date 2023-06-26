@@ -14,7 +14,7 @@ function speedShip (a){
 }
 
 function speedStop (a){
-  if(a >= 0){
+  if(a > 0){
     return a -= 5
   } else {
     return a
