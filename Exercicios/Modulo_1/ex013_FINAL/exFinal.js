@@ -1,17 +1,31 @@
 const vagas = []
-const candidatos = {}
 
 function menu (){
   return prompt(
-    'Seja Bem-Vindo(a) ao Cadastro Positivo' +
+    'Seja Bem-Vindo(a) ao ▼ Cadastro Positivo ▼' +
     '\nEscolha uma das opções abaixo:' +
-    '\n\n1. Listar vagas disponíveis' +
-    '\n\n2. Criar uma nova vaga' +
-    '\n\n3. Visualizar uma vaga' +
-    '\n\n4. Inscrever um candidato em uma vaga' +
-    '\n\n5. Excluir uma vaga' +
-    '\n\n6. Sair'
+    '\n\n1. Exibir vagas disponíveis' +
+    '\n2. Criar uma vaga' +
+    '\n3. Visualizar uma vaga' +
+    '\n4. Inscrever um(a) candidato(a)' +
+    '\n5. Excluir uma vaga' +
+    '\n6. Sair'
   )
 }
 
-const vgText = vagas.reduce()
+function exibirVagas () {
+  const vaga = vagas.reduce(function (acumulador, valorAtual, indice) {
+    acumulador += (indice + 1) + '. ' + '\n'
+    acumulador += 'Vaga: ' + valorAtual.nome + '\n'
+    acumulador += 'Candidatos: ' + valorAtual.candidatos.length
+    return acumulador
+  }, '')
+
+  if (!vaga) {
+    alert('Sem vagas no momento')
+    return
+  }
+  
+  alert(vaga)
+}
+exibirVagas()
