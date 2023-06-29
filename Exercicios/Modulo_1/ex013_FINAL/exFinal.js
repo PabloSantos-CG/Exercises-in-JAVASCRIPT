@@ -28,4 +28,3 @@ function exibirVagas () {
   
   alert(vaga)
 }
-exibirVagas()
