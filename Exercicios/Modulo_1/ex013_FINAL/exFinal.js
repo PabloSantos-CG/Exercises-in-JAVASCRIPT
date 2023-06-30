@@ -5,7 +5,7 @@ function exibirVagas () {
   const exibirVagas = vagas.reduce(function (acumulador, valorAtual, indice) {
     acumulador += 'Índice: ' + indice + ' º ' + '\n'
     acumulador += 'Vaga: ' + valorAtual.nome + '\n'
-    acumulador += 'Candidatos inscritos: ' + '\n' + valorAtual.candidatos.length
+    acumulador += 'Candidatos inscritos: ' + valorAtual.candidatos.length + '\n'
     return acumulador
   }, '')
 
