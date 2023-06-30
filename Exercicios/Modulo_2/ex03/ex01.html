@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="ex01.css">
+</head>
+</style>
+<body>
+  <h1>Escalação do Time</h1>
+  <hr>
+  <div id="box-pai">
+    
+    <div id="box_add" class="box">
+      <h3>Adicionar Jogador</h3><br>
+
+      <div>
+        <label for="position">Posição do jogador: </label>
+        <input type="text" name="playerPosition" id="position">
+      </div>
+      <br>
+
+      <div>
+        <label for="name">Nome do jogador: </label>
+        <input type="text" name="playerName" id="name">
+      </div>
+      <br>
+
+      <div>
+        <label for="number">Número da camisa: </label>
+        <input type="number" name="playerNumber" id="number">
+      </div>
+      <br>
+    
+      <button id="add_button" class="button" onclick="addPlayer()">Confirmar</button>
+    </div>
+
+    <div id="box_remove" class="box">
+      <h3>Remover Jogador</h3><br>
+
+      <div>
+        <label for="remove">Número da camisa: </label>
+        <input type="number" name="removePlayer" id="remove">
+      </div>
+      <br>
+
+      <button id="remove_button" class="button">Confirmar</button>
+    </div>
+
+  </div>
+
+  <div id="list-team">
+    <h2>TIME</h2><hr>
+    <ul id="list"></ul>
+  </div>
+  <script src="ex01.js"></script>
+</body>
+</html>
