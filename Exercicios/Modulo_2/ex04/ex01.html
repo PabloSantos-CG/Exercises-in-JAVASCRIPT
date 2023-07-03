@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  span {
+    color: red;
+  }
+</style>
+<body>
+  <h1>Log in</h1>
+    <div id="father">
+
+      <label for="user">Usuário<span>*</span></label>
+      <input type="text" id="user" required>
+      <br>
+
+      <label for="passowrd">Senha<span>*</span></label>
+      <input type="password" name="userPass" id="passowrd" required>
+      <br>
+
+      <label for="passowrdConfirm">Confirme a senha<span>*</span></label>
+      <input type="password" name="userPassConfirm" id="passowrdConfirm" required>
+      <br>
+
+      <button onclick="register(this.parentNode)">Cadastrar</button>
+
+    </div>
+
+  <script src="ex01.js"></script>
+</body>
+</html>
