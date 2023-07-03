@@ -1,8 +1,8 @@
-function cursor () {
-  const bloco = document.getElementById('bloco')
-  bloco.style.left='15%'
-}
-function cursorback () {
-  const bloco = document.getElementById('bloco')
-  bloco.style.left='0%'
-}
+const caixaInterativa = document.getElementById('bloco')
+caixaInterativa.addEventListener('mouseenter', function () {
+  this.innerText = 'mouse entrou na box'
+})
+
+caixaInterativa.addEventListener('mouseout', function () {
+  this.innerText = 'mouse saiu na box'
+})
