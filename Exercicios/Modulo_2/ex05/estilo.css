@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+fieldset {
+  min-width: 260px;
+  max-width: 350px;
+  height: 200px;
+  margin: 20px auto;
+
+  padding: 10px;
+  border-radius: 5px;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 15px;
+}
+
+#main, #buttons, #registerConfirm {
+  width: 95%;
+}
+
+#buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+#buttons > button, #registerConfirm > button {
+  padding: 3px 8px;
+  cursor: pointer;
+}
+
+#main > input[type="text"] {
+  width: 70%;
+}
+
+#devList {
+  height: 300px;
+  border: 1px solid black;
+  margin: 10px 30px;
+}
+
+#dataField {
+  list-style-type: none;
+  margin: 0 30px;
+}
