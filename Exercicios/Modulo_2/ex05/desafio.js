@@ -15,8 +15,4 @@ function creatInput(id, name, value, type = 'text', placeholder = '') {
   return input
 }
 
-const form = document.getElementById('devForm')
-
-form.addEventListener('submit', function (ev) {
-  ev.preventDefault()
-})
+const 
