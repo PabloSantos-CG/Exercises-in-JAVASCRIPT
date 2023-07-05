@@ -8,35 +8,26 @@
   <script src="desafio.js" defer></script>
 </head>
 <body>
+  <h1>Desafio - Cadastro de Devs</h1>
+  <hr>
 
-  <form id="orderForm">
-    <fieldset>
-    <legend>Cadastro de Desenvolvedores</legend>
-    <div id="main">
-      <label for="userName">Nome:</label>
-      <input type="text" name="name" id="userName">
-    </div>
-    
-    <div id="buttons">
-      <button id="addFeature">Adicionar Tecnologia</button>
-      <button id="removeFeature">Remover Tecnologia</button>
-    </div>
-    
-    <div id="registerConfirm">
-      <button id="buttonConfirm" type="submit">Cadastrar Dev</button>
-    </div>
+  <form id="devForm">
+    <h2>Cadastrar Novo Desenvolvedor</h2>
+    <div id="box_fullName">
+      <label for="fullName">Nome Completo: </label>
+      <input type="text" name="fullName" id="fullName">
+    </div><br>
 
-  </fieldset>
+    <div id="box_technologies">
+      <label for="tech">Tecnologias:</label><br>
+      <button type="button">Adicionar</button>
+    </div><br>
+
+    <ul id="techList"> </ul><br>
+
+    <div id="box_confirmRegister">
+      <button type="submit">Cadastrar</button>
+    </div>
   </form>
-
-  <div>
-    <ul id="dataField">
-
-    </ul>
-  </div>
-
-  <div id="devList">
-
-  </div>
 </body>
 </html>
