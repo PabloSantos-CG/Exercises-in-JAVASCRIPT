@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="ex05.js" defer></script>
+</head>
+<style>
+  button{
+    cursor: pointer;
+    margin: 10px 0;
+  }
+  li {
+    margin: 10px 0;
+  }
+</style>
+<body>
+  <h1>Manipulando DOM</h1><hr>
+  <form id="OrderForm">
+  <fieldset>
+    <legend>Endereço</legend> 
+    <div>
+      <label for="city">Cidade: </label>
+      <input type="text" name="city" id="city" placeholder="Lauro de Freitas..." required>
+    </div>
+    
+    <div>
+      <label for="neighborhood">Bairro: </label>
+      <input type="text" name="neighborhood" id="neighborhood" placeholder="Caji, caixa d'água..." required>
+    </div>
+
+    <div>
+      <label for="houseNumber">Número da casa: </label>
+      <input type="number" name="houseNumber" id="houseNumber" required>
+    </div>
+
+    <div>
+      <label for="houseState">Estado: </label>
+      <select name="houseState" id="houseState" required>
+        <option value="PADRAO">Selecione um Estado</option>
+        <option value="AL">Alagoas</option>
+        <option value="BA">Bahia</option>
+        <option value="MG">Minas Gerais</option>
+        <option value="SP">São Paulo</option>
+        <option value="RJ">Rio de Janeiro</option>
+      </select>
+    </div>
+
+    <button id="buttonAdd">Adicionar</button>
+  </fieldset>
+  </form>
+
+  <section>
+    <ul id="listOfAddres"></ul>
+  </section>
+</body>
+</html>
