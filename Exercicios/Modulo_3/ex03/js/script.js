@@ -1,4 +1,4 @@
-import { functionalities } from "./functionalities.js"
+import { functionalities, clear } from "./functionalities.js"
 import { calculate } from "./calculations.js"
 import { appearence } from "./appearance.js"
 
@@ -11,14 +11,7 @@ document.querySelectorAll('.charKey').forEach( currentValue => {
   })
 })
 
-document.getElementById('clear').addEventListener('click', () => {
-  const result = document.getElementById('result')
-  input.value = ''
-  input.focus()
-  result.value = ''
-  result.classList.remove('error')
-})
-
+document.getElementById('clear').addEventListener('click', clear)
 document.getElementById('equal').addEventListener('click', calculate)
 
 appearence()

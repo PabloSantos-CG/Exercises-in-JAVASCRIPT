@@ -17,5 +17,19 @@ export const functionalities = () => {
       calculate()
     }
   })
-  
+}
+
+export const clear = () => {
+  const result = document.getElementById('result')
+  const input = document.getElementById('input')
+  const buttonCopy = document.getElementById('copyToClipboard')
+  buttonCopy.innerText = 'Copy'
+  buttonCopy.classList.remove('success')
+
+  input.value = ''
+  input.focus()
+  result.value = ''
+  result.classList.remove('error')
+
+
 }
