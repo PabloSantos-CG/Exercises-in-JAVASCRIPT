@@ -1,0 +1,14 @@
+{
+  "name": "modulando-data",
+  "version": "1.0.0",
+  "description": "Este programa recebe uma data de nascimento, mostra a idade atual, próxima data de aniversário e quantos dias faltam.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "PabloSantos-CG",
+  "license": "ISC",
+  "dependencies": {
+    "dayjs": "^1.11.9"
+  }
+}
