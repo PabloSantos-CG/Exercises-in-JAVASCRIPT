@@ -1,15 +1,18 @@
 const path = require('path');
+const miniCss = require('mini-css-extract-plugin')
 
 module.exports = {
   entry: {
-    cru: './src/index.js',
-    qualquer: './src/qualquer.js'
+    index: './src/index.js',
   },
-
   mode: 'production',
-
-  output: {
-    path: path.resolve(__dirname, 'public'),
-    filename: '[name].newArquiv.js'
-  }
+  module: {
+    rules: [{
+      test: /\.css$/,
+      use: [miniCss.loader,'css-loader']
+    }]
+  },
+  plugins: [
+    new miniCss()
+  ]
 }
