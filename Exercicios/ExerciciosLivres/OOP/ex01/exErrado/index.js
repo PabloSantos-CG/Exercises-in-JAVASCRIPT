@@ -1,12 +1,13 @@
 const LibrariesSet = require("./LibrariesSet");
 const Library = require("./Library");
 
+const librariesSet = new LibrariesSet()
 const library = new Library()
 
 
 
 library.addNewBook('Zé', 'Café ta caro', 200)
-const librariesSet = new LibrariesSet()
+
 librariesSet.addLibraries('Biblioteca UCSal', '(41) 99916-2141', '9h às 18h', 'Rua Coronel Teixeira', '42700-115', 'Salvador', 'Bahia')
 
 const result = librariesSet.Bibliotecas

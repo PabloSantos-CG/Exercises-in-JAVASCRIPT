@@ -1,8 +1,8 @@
-const Address = require("./address")
+const Address = require("./Address")
 
 class Library {
-  constructor ({id, nameLibrary, phoneNumber, openingHours, road, cep, city, state}) {
-    this.id = id
+  constructor (nameLibrary, phoneNumber, openingHours, road, cep, city, state) {
+    this.id = Math.floor(Math.random() * 9999)
     this.name = nameLibrary
     this.books = []
     this.phoneNumber = phoneNumber

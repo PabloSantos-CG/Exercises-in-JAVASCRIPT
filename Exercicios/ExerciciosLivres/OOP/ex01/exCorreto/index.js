@@ -1,4 +1,4 @@
-const LibrariesSet = require("./LibrariesSet");
+const LibrariesSet = require("./Libraries")
 
 const librariesSet = new LibrariesSet()
 
