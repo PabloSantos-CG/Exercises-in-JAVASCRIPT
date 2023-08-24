@@ -1,19 +1,17 @@
+const Comment = require("./comment")
+
 class Post {
-  constructor (title, content, date) {
+  constructor (author, title, body) {
+    this.author = author
     this.title = title
-    this.content = content
-    this.date = date
+    this.body = body
+    this.comments = []
+    this.date = new Date()
   }
 
-  addComment () {
-    return 
+  addNewComments(usuario, content) {
+    this.comments.push(new Comment(usuario, content))
   }
 }
 
-const daily = new Post('Massacre', 'As carteiras de todos estão sangrando!', '22/08/2023')
-
-console.log(daily)
-
-daily.addComment('ROMBO! 28bi', 'Americanas descobre rombo bilionário!', '10/04/2023')
-
-console.log(daily)
+module.exports = Post

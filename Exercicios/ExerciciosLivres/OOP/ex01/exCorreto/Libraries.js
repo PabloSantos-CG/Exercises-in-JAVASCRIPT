@@ -1,23 +1,12 @@
-const Library = require("./Library")
+const Library = require("./Library") 
 
 class LibrariesSet {
     constructor() {
         this.Bibliotecas = []
     }
 
-    addLibraries({id, nameLibrary, phoneNumber, openingHours, road, cep, city, state}) {
-        const library = new Library({
-            id,
-            cep,
-            city,
-            nameLibrary,
-            openingHours,
-            phoneNumber,
-            road,
-            state,
-        })
-
-        this.Bibliotecas.push(library)
+    addLibraries(...libraries) {
+        libraries.forEach( (library) => this.Bibliotecas.push(new Library(library)))
     }
 
     addBookInLibary({id, author, title, pages}) {

@@ -1,4 +1,5 @@
 const Address = require("./Address")
+const { randomUUID } = require("node:crypto")
 
 class Library {
   constructor ({id, nameLibrary, phoneNumber, openingHours, road, cep, city, state}) {
@@ -13,10 +14,10 @@ class Library {
 
   addNewBook(author, title, pages) {
     const newBook = {
-      Id: Math.floor(Math.random() * 9999),
-      Author: author,
-      Title: title,
-      Pages: pages
+      id: randomUUID(),
+      author,
+      title,
+      pages
     }
 
     this.books.push(newBook)
