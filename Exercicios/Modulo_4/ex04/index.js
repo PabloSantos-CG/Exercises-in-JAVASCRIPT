@@ -25,3 +25,4 @@ const login = new Login()
 // const retorno = 
 
 console.log(login.newAcess('Maike', 12))
+console.log(login.newAcess('Maike', 123))
