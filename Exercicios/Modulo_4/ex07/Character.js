@@ -6,15 +6,8 @@ class Character {
     this.defensePoints = defensePoints
   }
 
-  returnThis() {
-    return this
-  }
-
-  attack(opponent) {
-    const obj = opponent.returnThis()
-    obj.healthPoints = obj.defensePoints - this.attackPoints
-    
-    console.log(opponent)
+  attack(param) {
+    param.healthPoints -= param.attackPoints - param.defensePoints
   }
 }
 
