@@ -7,7 +7,7 @@ class Character {
   }
 
   attack(param) {
-    param.healthPoints -= param.attackPoints - param.defensePoints
+    param.healthPoints -= this.attackPoints - param.defensePoints
   }
 }
 
