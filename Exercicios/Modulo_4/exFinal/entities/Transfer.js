@@ -1,10 +1,10 @@
 const Deposit = require("./Deposit")
 
 module.exports = class Transfer extends Deposit{
-  constructor(userSubmit, userReceive, value) {
+  constructor(fromUser, toUser, value) {
     super(value)
-    this.#userSubmit = userSubmit
-    this.#userReceive = userReceive
+    this.fromUser = fromUser
+    this.toUser = toUser
     this.criationDate = new Date()
   }
 }

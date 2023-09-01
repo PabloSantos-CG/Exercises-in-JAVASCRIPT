@@ -3,13 +3,13 @@ const Installment = require("./Installment")
 module.exports = class Loan {
   static #interestRate = 1.05
 
-  constructor(value, NumberInstallments) {
+  constructor(value, NumbersInstallments) {
     this.value = value
-    this.criationDate = new Date()
     this.installments = []
+    this.criationDate = new Date()
 
-    for (i = 0; i <= NumberInstallments; i++) {
-      this.installments.push(new Installment( (this.value * Loan.#interestRate) / NumberInstallments, i ))
+    for (i = 0; i <= NumbersInstallments; i++) {
+      this.installments.push(new Installment( (this.value * Loan.#interestRate) / NumbersInstallments, i ))
     }
   }
 
