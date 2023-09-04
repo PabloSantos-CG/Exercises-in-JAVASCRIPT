@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <script src="index.js" defer></script>
+</head>
+<body>
+  <main>
+    <form>
+      <h1>Log in</h1>
+      <div id="boxEmail">
+        <label for="userEmail">
+          <img src="img/userIcon.png" alt="usuário">
+        </label>
+
+        <input type="email" name="userEmail" id="userEmail" required placeholder="Digite seu e-mail">
+      </div>
+
+      <div id="boxPassword">
+        <label for="userPassword">
+          <img src="img/passwordIcon.png" alt="senha">
+        </label>
+
+        <input type="password" name="userPassword" id="userPassword" required placeholder="Digite sua senha">
+      </div>
+
+      <div id="boxPasswordConfirmation">
+        <label for="userPasswordConfirmation">
+          <img src="img/passwordIcon.png" alt="confirmação de senha">
+        </label>
+
+        <input type="password" name="userPasswordConfirmation" id="userPasswordConfirmation" required placeholder="Repita sua senha">
+      </div>
+
+      <div id="boxButtons">
+        <button type="submit" id="btnFormConfirm">
+          Entrar 
+          <span><img src="img/confirmBtnIcon.png" alt=""></span>
+        </button>
+
+        <button type="button" id="btnFormClear">
+          Limpar
+          <span><img src="img/clearBtnIcon.png" alt=""></span>
+        </button>
+      </div>
+    </form>
+  </main>
+</body>
+</html>

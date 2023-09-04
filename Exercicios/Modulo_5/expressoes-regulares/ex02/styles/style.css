@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body, html {
+  height: 100%;
+}
+
+main {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #0FC2C0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  row-gap: .3rem;
+  
+  border: 1px solid black;
+  padding: 5rem;
+  border-radius: 5px;
+
+  background-color: #fdfffd;
+  box-shadow: 1px 2px 5px #000000;
+}
+
+h1 {
+  margin-bottom: 35px;
+}
+
+#boxEmail ,#boxPassword {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#boxEmail {
+  margin-bottom: .8rem;
+}
+
+input[type="email"],
+input[type="password"] {
+  background-color: #93bfb79a;
+  padding: 5px 35px 5px 5px;
+  border: 1px solid #000000;
+  border-radius: 3px;
+}
+
+input:focus {
+  background-color: #ffffff;
+  transition: .2s;
+}
+
+#boxButtons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: .9rem;
+}
+
+#btnFormConfirm, #btnFormClear {
+  display: flex;
+  align-items: center;
+  column-gap: 3px;
+
+  padding: 5px 8px;
+  cursor: pointer;
+
+  border: 1px solid #000000;
+  border-radius: .2rem;
+
+  font-weight: bold;
+  text-shadow: 1px 1px 1px black;
+  box-shadow: 1px 1px 2px black;
+}
+
+#btnFormConfirm > span {
+  margin-top: 3px;
+}
+
+#btnFormConfirm {
+  background-color: #3498db;
+  color: #fff;
+}
+
+#btnFormClear {
+  background-color: #e74c3c;
+  color: #fff;
+}
+
+#btnFormConfirm:hover, #btnFormClear:hover {
+  background-color: #696969;
+  transition: .3s;
+}
