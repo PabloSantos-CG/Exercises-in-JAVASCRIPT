@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@600&display=swap');
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -7,15 +9,27 @@
 
 body, html {
   height: 100%;
-}
+}  
 
 main {
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  
+  background: url(../img/background.jpg) center bottom no-repeat;
+  background-size: cover;
+}
 
-  background-color: #0FC2C0;
+main::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right:0;
+  z-index: 1;
+  background: #000000a1;
 }
 
 form {
@@ -23,15 +37,34 @@ form {
   flex-direction: column;
   row-gap: .3rem;
   
+  width: 30rem;
+  height: 25rem;
+
   border: 1px solid black;
   padding: 5rem;
-  border-radius: 5px;
+  border-radius: 8px;
 
-  background-color: #fdfffd;
-  box-shadow: 1px 2px 5px #000000;
+  background-color: #fffffff1;
+  box-shadow: 0px 0px 55px #ffffff61;
+  z-index: 2;
+
+  position: relative;
+}  
+
+#newMoon {
+  position: absolute;
+  right: -5%;
+  top: -7%;
+}
+
+#newMoon > img {
+  width: 70px;
 }
 
 h1 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
   margin-bottom: 35px;
 }
 
@@ -39,18 +72,17 @@ h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-#boxEmail {
-  margin-bottom: .8rem;
+  gap: .5rem;
 }
 
 input[type="email"],
 input[type="password"] {
-  background-color: #93bfb79a;
-  padding: 5px 35px 5px 5px;
+  background-color: #4c1c5938;
+  padding: 5px;
   border: 1px solid #000000;
   border-radius: 3px;
+
+  flex: 1;
 }
 
 input:focus {
@@ -59,13 +91,12 @@ input:focus {
 }
 
 #boxButtons {
-  display: flex;
-  justify-content: space-between;
   margin-top: .9rem;
 }
 
-#btnFormConfirm, #btnFormClear {
+#btnFormConfirm {
   display: flex;
+  justify-content: center;
   align-items: center;
   column-gap: 3px;
 
@@ -75,9 +106,10 @@ input:focus {
   border: 1px solid #000000;
   border-radius: .2rem;
 
+  font-size: 1.2em;
   font-weight: bold;
   text-shadow: 1px 1px 1px black;
-  box-shadow: 1px 1px 2px black;
+  box-shadow: 1.5px 2px 2px #000000a6;
 }
 
 #btnFormConfirm > span {
@@ -85,16 +117,13 @@ input:focus {
 }
 
 #btnFormConfirm {
-  background-color: #3498db;
+  width: 100%;
+  background-color: #4C1C59;
   color: #fff;
 }
 
-#btnFormClear {
-  background-color: #e74c3c;
-  color: #fff;
-}
-
-#btnFormConfirm:hover, #btnFormClear:hover {
-  background-color: #696969;
-  transition: .3s;
+#btnFormConfirm:hover {
+  background-color: #8C374E;
+  transition: .5s;
+  transition-delay: .08s;
 }
