@@ -53,8 +53,8 @@ form {
 
 #newMoon {
   position: absolute;
-  right: -5%;
-  top: -7%;
+  right: 3%;
+  top: -10%;
 }
 
 #newMoon > img {
@@ -75,8 +75,7 @@ h1 {
   gap: .5rem;
 }
 
-input[type="email"],
-input[type="password"] {
+.styleInputs {
   background-color: #4c1c5938;
   padding: 5px;
   border: 1px solid #000000;
@@ -126,4 +125,20 @@ input:focus {
   background-color: #8C374E;
   transition: .5s;
   transition-delay: .08s;
+}
+
+#email-error,
+#password-error {
+  color: #f64348;
+  font-size: .75rem;
+  margin: .25rem ;
+
+}
+
+.error {
+  border-color: #f64348;
+}
+
+.success {
+  border-color: #43f67f;
 }
