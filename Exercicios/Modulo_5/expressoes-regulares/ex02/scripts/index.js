@@ -10,16 +10,8 @@ function validateEmail(email) {
     const error = new Error('Email inválido!')
     error.input = 'email'
     throw error
-  }
+  } 
 }
-
-/* 
-        password.length < 8 || 
-        !password.match(/[a-z]/) || 
-        !password.match(/[A-Z]/) || 
-        !password.match(/[0-9]/) ||
-        !password.match(/[^a-zA-Z0-9\s]/)
-*/
 
 function validatePassword(password) {
   if(
@@ -42,14 +34,6 @@ function resetFormStyles() {
   })
 }
 
-// document.querySelector("#userEmail").addEventListener("focusout", () => {
-  
-// })
-
-// function inspection() {
-
-// }
-
 document.querySelector("form").addEventListener("submit", (ev) => {
   ev.preventDefault()
   resetFormStyles()
@@ -69,5 +53,3 @@ document.querySelector("form").addEventListener("submit", (ev) => {
     console.log('uma execução foi realizada')
   }
 })
-
-//melhorias, sempre que o mouse entrar e também adicionar um finally com submit

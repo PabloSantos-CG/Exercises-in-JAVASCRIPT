@@ -127,6 +127,17 @@ input:focus {
   transition-delay: .08s;
 }
 
+p > a {
+  text-decoration: none;
+  font-size: .9rem;
+  color: #4C1C59;
+  font-weight: bolder;
+}
+
+p > a:hover {
+  text-decoration: underline;
+}
+
 #email-error,
 #password-error {
   color: #f64348;
