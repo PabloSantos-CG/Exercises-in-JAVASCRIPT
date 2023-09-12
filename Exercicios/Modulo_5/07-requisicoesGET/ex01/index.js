@@ -16,9 +16,12 @@ async function createCountry(country) {
 
 async function getCountries() {
   const response = await fetch("https://restcountries.com/v3.1/all")
+
   const contries = await response.json()
+  console.log(contries)
 
   contries.forEach(createCountry)
   
 }
+
 getCountries()
